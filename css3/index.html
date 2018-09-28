@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<style>
+			.box img{
+				width: 250px;
+				height: 150px;
+				background: red;
+				position: absolute;
+				left: 10px;
+				top: 10px;
+				animation: abc 2s linear 2s 1 alternate both;
+			}
+			.box:hover{
+				animation-play-state:paused ;
+			}
+			/*定义css3动画*/
+			@keyframes abc{
+				
+				0%{left: 100px;top: 10px;}
+				10%{left: 200px;top: 20px;}
+				20%{left: 400px;top: 10px;}
+				30%{left: 600px;top: 20px;}
+				40%{left: 700px;top: 20px;}
+				50%{left:800px;top:20px;transform: rotateY(180deg);}
+			}
+		</style>
+	</head>
+	<body>
+		<div class="box">
+			<img src="img/car.jpg">
+		</div>
+	</body>
+</html>

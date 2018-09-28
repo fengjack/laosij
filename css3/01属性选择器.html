@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<style>
+			[data-pp]{
+				 color:red;
+			}
+			[data-pp="p2"]{
+				color: blue;
+			}
+			[data-pp^="b"]{
+				color: black;
+			}
+			[data-pp$="1"]{
+				color: pink;
+			}
+			[data-pp*="c"]{
+				font-size: 30px;
+			}
+			[data-pp="pc3"]+p{
+				background: green;
+			}
+		
+		</style>
+	</head>
+	<body>
+		  <p data-pp = "p1">1</p>
+		  <p data-pp = "p2">2</p>
+		  <p data-pp = "pc3">3</p>
+		  <p data-pp = "b1">4</p>
+		  <p data-pp = "bc2">5</p>
+		  <p data-pp = "b2">6</p>
+		  <p data-pp = "bc2">7</p>
+		  
+	</body>
+</html>
